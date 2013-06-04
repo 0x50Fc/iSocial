@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		118AFB96175D913300A6A2FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB94175D913300A6A2FF /* InfoPlist.strings */; };
+		118AFB9D175D924F00A6A2FF /* iSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFB9C175D924F00A6A2FF /* iSocial.m */; };
+		118AFBB3175D932200A6A2FF /* iSocialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFBB2175D932100A6A2FF /* iSocialController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		118AFBA2175D926200A6A2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 114772F41727DE5200196FB2;
+			remoteInfo = vTeam;
+		};
+		118AFBA5175D927800A6A2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 114772F31727DE5200196FB2;
+			remoteInfo = vTeam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		118AFB7C175D910500A6A2FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		118AFB8E175D913200A6A2FF /* iSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118AFB8F175D913200A6A2FF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		118AFB93175D913300A6A2FF /* iSocial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSocial-Info.plist"; sourceTree = "<group>"; };
+		118AFB95175D913300A6A2FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		118AFB97175D913300A6A2FF /* iSocial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSocial-Prefix.pch"; sourceTree = "<group>"; };
+		118AFB9B175D924F00A6A2FF /* iSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSocial.h; sourceTree = "<group>"; };
+		118AFB9C175D924F00A6A2FF /* iSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSocial.m; sourceTree = "<group>"; };
+		118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vTeam.xcodeproj; path = ../../../workspace/Launch/oc/trunk/vTeam/vTeam.xcodeproj; sourceTree = "<group>"; };
+		118AFBAA175D92B500A6A2FF /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		118AFBAB175D92B500A6A2FF /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
+		118AFBAC175D92B500A6A2FF /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		118AFBAD175D92B500A6A2FF /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		118AFBB1175D932100A6A2FF /* iSocialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSocialController.h; sourceTree = "<group>"; };
+		118AFBB2175D932100A6A2FF /* iSocialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSocialController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		118AFB8B175D913200A6A2FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		118AFB70175D910500A6A2FF = {
+			isa = PBXGroup;
+			children = (
+				118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */,
+				118AFBA9175D92B500A6A2FF /* WeChatSDK */,
+				118AFB91175D913200A6A2FF /* iSocial */,
+				118AFB7B175D910500A6A2FF /* Frameworks */,
+				118AFB7A175D910500A6A2FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		118AFB7A175D910500A6A2FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				118AFB8E175D913200A6A2FF /* iSocial.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		118AFB7B175D910500A6A2FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				118AFB7C175D910500A6A2FF /* Foundation.framework */,
+				118AFB8F175D913200A6A2FF /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		118AFB91175D913200A6A2FF /* iSocial */ = {
+			isa = PBXGroup;
+			children = (
+				118AFB92175D913300A6A2FF /* Supporting Files */,
+				118AFB9B175D924F00A6A2FF /* iSocial.h */,
+				118AFB9C175D924F00A6A2FF /* iSocial.m */,
+				118AFBB1175D932100A6A2FF /* iSocialController.h */,
+				118AFBB2175D932100A6A2FF /* iSocialController.m */,
+			);
+			path = iSocial;
+			sourceTree = "<group>";
+		};
+		118AFB92175D913300A6A2FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				118AFB93175D913300A6A2FF /* iSocial-Info.plist */,
+				118AFB94175D913300A6A2FF /* InfoPlist.strings */,
+				118AFB97175D913300A6A2FF /* iSocial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		118AFB9F175D926200A6A2FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				118AFBA3175D926200A6A2FF /* vTeam.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		118AFBA9175D92B500A6A2FF /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				118AFBAA175D92B500A6A2FF /* libWeChatSDK.a */,
+				118AFBAB175D92B500A6A2FF /* libWeChatSDK_armv7_armv7s.a */,
+				118AFBAC175D92B500A6A2FF /* WXApi.h */,
+				118AFBAD175D92B500A6A2FF /* WXApiObject.h */,
+			);
+			path = WeChatSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		118AFB8D175D913200A6A2FF /* iSocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118AFB98175D913300A6A2FF /* Build configuration list for PBXNativeTarget "iSocial" */;
+			buildPhases = (
+				118AFB8A175D913200A6A2FF /* Sources */,
+				118AFB8B175D913200A6A2FF /* Frameworks */,
+				118AFB8C175D913200A6A2FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				118AFBA6175D927800A6A2FF /* PBXTargetDependency */,
+			);
+			name = iSocial;
+			productName = iSocial;
+			productReference = 118AFB8E175D913200A6A2FF /* iSocial.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		118AFB71175D910500A6A2FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = hailong.org;
+			};
+			buildConfigurationList = 118AFB74175D910500A6A2FF /* Build configuration list for PBXProject "iSocial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 118AFB70175D910500A6A2FF;
+			productRefGroup = 118AFB7A175D910500A6A2FF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 118AFB9F175D926200A6A2FF /* Products */;
+					ProjectRef = 118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				118AFB8D175D913200A6A2FF /* iSocial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		118AFBA3175D926200A6A2FF /* vTeam.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = vTeam.framework;
+			remoteRef = 118AFBA2175D926200A6A2FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		118AFB8C175D913200A6A2FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118AFB96175D913300A6A2FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		118AFB8A175D913200A6A2FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118AFB9D175D924F00A6A2FF /* iSocial.m in Sources */,
+				118AFBB3175D932200A6A2FF /* iSocialController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		118AFBA6175D927800A6A2FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = vTeam;
+			targetProxy = 118AFBA5175D927800A6A2FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		118AFB94175D913300A6A2FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118AFB95175D913300A6A2FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		118AFB85175D910500A6A2FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		118AFB86175D910500A6A2FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		118AFB99175D913300A6A2FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSocial/iSocial-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "iSocial/iSocial-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WeChatSDK\"",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		118AFB9A175D913300A6A2FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSocial/iSocial-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "iSocial/iSocial-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WeChatSDK\"",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		118AFB74175D910500A6A2FF /* Build configuration list for PBXProject "iSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118AFB85175D910500A6A2FF /* Debug */,
+				118AFB86175D910500A6A2FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		118AFB98175D913300A6A2FF /* Build configuration list for PBXNativeTarget "iSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118AFB99175D913300A6A2FF /* Debug */,
+				118AFB9A175D913300A6A2FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 118AFB71175D910500A6A2FF /* Project object */;
+}
