@@ -13,16 +13,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		118AFBA2175D926200A6A2FF /* PBXContainerItemProxy */ = {
+		118AFBE2175D988B00A6A2FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */;
+			containerPortal = 118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 114772F41727DE5200196FB2;
 			remoteInfo = vTeam;
 		};
-		118AFBA5175D927800A6A2FF /* PBXContainerItemProxy */ = {
+		118AFBE4175D98A300A6A2FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */;
+			containerPortal = 118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 114772F31727DE5200196FB2;
 			remoteInfo = vTeam;
@@ -38,13 +38,13 @@
 		118AFB97175D913300A6A2FF /* iSocial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSocial-Prefix.pch"; sourceTree = "<group>"; };
 		118AFB9B175D924F00A6A2FF /* iSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSocial.h; sourceTree = "<group>"; };
 		118AFB9C175D924F00A6A2FF /* iSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSocial.m; sourceTree = "<group>"; };
-		118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vTeam.xcodeproj; path = ../../../workspace/Launch/oc/trunk/vTeam/vTeam.xcodeproj; sourceTree = "<group>"; };
 		118AFBAA175D92B500A6A2FF /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		118AFBAB175D92B500A6A2FF /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
 		118AFBAC175D92B500A6A2FF /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		118AFBAD175D92B500A6A2FF /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		118AFBB1175D932100A6A2FF /* iSocialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSocialController.h; sourceTree = "<group>"; };
 		118AFBB2175D932100A6A2FF /* iSocialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSocialController.m; sourceTree = "<group>"; };
+		118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vTeam.xcodeproj; path = /Users/hailongz/Documents/github/iSee/iSee/../../vTeam/vTeam/vTeam.xcodeproj; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		118AFB70175D910500A6A2FF = {
 			isa = PBXGroup;
 			children = (
-				118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */,
+				118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */,
 				118AFBA9175D92B500A6A2FF /* WeChatSDK */,
 				118AFB91175D913200A6A2FF /* iSocial */,
 				118AFB7B175D910500A6A2FF /* Frameworks */,
@@ -108,14 +108,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		118AFB9F175D926200A6A2FF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				118AFBA3175D926200A6A2FF /* vTeam.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		118AFBA9175D92B500A6A2FF /* WeChatSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +117,14 @@
 				118AFBAD175D92B500A6A2FF /* WXApiObject.h */,
 			);
 			path = WeChatSDK;
+			sourceTree = "<group>";
+		};
+		118AFBDF175D988B00A6A2FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				118AFBE3175D988B00A6A2FF /* vTeam.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +141,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				118AFBA6175D927800A6A2FF /* PBXTargetDependency */,
+				118AFBE5175D98A300A6A2FF /* PBXTargetDependency */,
 			);
 			name = iSocial;
 			productName = iSocial;
@@ -169,8 +169,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 118AFB9F175D926200A6A2FF /* Products */;
-					ProjectRef = 118AFB9E175D926200A6A2FF /* vTeam.xcodeproj */;
+					ProductGroup = 118AFBDF175D988B00A6A2FF /* Products */;
+					ProjectRef = 118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -181,11 +181,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		118AFBA3175D926200A6A2FF /* vTeam.framework */ = {
+		118AFBE3175D988B00A6A2FF /* vTeam.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = vTeam.framework;
-			remoteRef = 118AFBA2175D926200A6A2FF /* PBXContainerItemProxy */;
+			remoteRef = 118AFBE2175D988B00A6A2FF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -214,10 +214,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		118AFBA6175D927800A6A2FF /* PBXTargetDependency */ = {
+		118AFBE5175D98A300A6A2FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = vTeam;
-			targetProxy = 118AFBA5175D927800A6A2FF /* PBXContainerItemProxy */;
+			targetProxy = 118AFBE4175D98A300A6A2FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
