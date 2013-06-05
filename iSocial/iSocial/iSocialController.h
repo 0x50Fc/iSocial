@@ -11,8 +11,6 @@
 #import <Social/Social.h>
 #import <MessageUI/MessageUI.h>
 
-#import "WXApi.h"
-#import "WXApiObject.h"
 
 #define iSocialSaveImage        @"iSocialSaveImage"
 #define iSocialShareWeibo       @"iSocialShareWeibo"
@@ -36,6 +34,5 @@
 @property(nonatomic,retain) NSString * title;
 @property(nonatomic,assign) IBOutlet UIViewController * viewController;
 @property(nonatomic,readonly) UIActionSheet * actionSheet;
-
 
 @end

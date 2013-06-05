@@ -10,6 +10,8 @@
 		118AFB96175D913300A6A2FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB94175D913300A6A2FF /* InfoPlist.strings */; };
 		118AFB9D175D924F00A6A2FF /* iSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFB9C175D924F00A6A2FF /* iSocial.m */; };
 		118AFBB3175D932200A6A2FF /* iSocialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFBB2175D932100A6A2FF /* iSocialController.m */; };
+		11D6F6FA175ED396006C091C /* iSocial.h in Headers */ = {isa = PBXBuildFile; fileRef = 118AFB9B175D924F00A6A2FF /* iSocial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11D6F6FB175ED39B006C091C /* iSocialController.h in Headers */ = {isa = PBXBuildFile; fileRef = 118AFBB1175D932100A6A2FF /* iSocialController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		11D6F6F9175ED393006C091C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D6F6FA175ED396006C091C /* iSocial.h in Headers */,
+				11D6F6FB175ED39B006C091C /* iSocialController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		118AFB8D175D913200A6A2FF /* iSocial */ = {
 			isa = PBXNativeTarget;
@@ -137,6 +151,7 @@
 				118AFB8A175D913200A6A2FF /* Sources */,
 				118AFB8B175D913200A6A2FF /* Frameworks */,
 				118AFB8C175D913200A6A2FF /* Resources */,
+				11D6F6F9175ED393006C091C /* Headers */,
 			);
 			buildRules = (
 			);

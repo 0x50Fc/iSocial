@@ -8,3 +8,4 @@
 
 #import <UIKit/UIKit.h>
 
+#import <iSocial/iSocialController.h>

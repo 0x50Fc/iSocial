@@ -9,15 +9,20 @@
 #import "iSocialController.h"
 #import <vTeam/vTeam.h>
 
-#define ACTION_SAVE         NSLocalizedString(iSocialSaveImage, @"保存到相册")
-#define ACTION_SHARE_WEIBO  NSLocalizedString(iSocialShareWeibo, @"分享到微博")
-#define ACTION_SHARE_WEIXIN NSLocalizedString(iSocialShareWeixin, @"分享给微信好友")
-#define ACTION_SHARE_WEIXIN_GROUP   NSLocalizedString(iSocialShareWeixinGroup, @"分享到微信朋友圈")
-#define ACTION_SHARE_Facebook    NSLocalizedString(iSocialShareFacebook, @"分享到 Facebook")
-#define ACTION_SHARE_Twitter    NSLocalizedString(iSocialShareTwitter, @"分享到 Twitter")
-#define ACTION_SHARE_EMAIL  NSLocalizedString(iSocialShareEmail, @"发邮件")
-#define ACTION_SHARE_SMS    NSLocalizedString(iSocialShareSMS, @"发短信")
-#define ACTION_CANCEL       NSLocalizedString(iSocialCancel, @"取消")
+#import "WXApi.h"
+#import "WXApiObject.h"
+
+#define LocalizedString(key,v)  [[NSBundle mainBundle] localizedStringForKey:(key) value:(v) table:nil]
+
+#define ACTION_SAVE         LocalizedString(iSocialSaveImage, @"保存到相册")
+#define ACTION_SHARE_WEIBO  LocalizedString(iSocialShareWeibo, @"分享到微博")
+#define ACTION_SHARE_WEIXIN LocalizedString(iSocialShareWeixin, @"分享给微信好友")
+#define ACTION_SHARE_WEIXIN_GROUP   LocalizedString(iSocialShareWeixinGroup, @"分享到微信朋友圈")
+#define ACTION_SHARE_Facebook    LocalizedString(iSocialShareFacebook, @"分享到 Facebook")
+#define ACTION_SHARE_Twitter    LocalizedString(iSocialShareTwitter, @"分享到 Twitter")
+#define ACTION_SHARE_EMAIL  LocalizedString(iSocialShareEmail, @"发邮件")
+#define ACTION_SHARE_SMS    LocalizedString(iSocialShareSMS, @"发短信")
+#define ACTION_CANCEL       LocalizedString(iSocialCancel, @"取消")
 
 @implementation iSocialController
 
