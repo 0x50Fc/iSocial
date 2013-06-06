@@ -31,6 +31,14 @@
 @synthesize body = _body;
 @synthesize actionSheet = _actionSheet;
 @synthesize title = _title;
+@synthesize sourceType = _sourceType;
+
+-(id)init{
+    if((self = [super init])){
+        _sourceType = iSocialControllerSourceTypeChina;
+    }
+    return self;
+}
 
 -(void) dealloc{
     [_image release];
@@ -74,35 +82,39 @@
         
         _actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles: nil];
         
-        if(_image){
+        if(_image && (_sourceType & iSocialControllerSourceTypeSaveImage)){
             [_actionSheet addButtonWithTitle:ACTION_SAVE];
         }
         
         if([WXApi isWXAppInstalled] && [WXApi isWXAppSupportApi]){
-            [_actionSheet addButtonWithTitle:ACTION_SHARE_WEIXIN];
-            [_actionSheet addButtonWithTitle:ACTION_SHARE_WEIXIN_GROUP];
+            if((_sourceType & iSocialControllerSourceTypeWeixin)){
+                [_actionSheet addButtonWithTitle:ACTION_SHARE_WEIXIN];
+            }
+            if((_sourceType & iSocialControllerSourceTypeWeixinGroup)){
+                [_actionSheet addButtonWithTitle:ACTION_SHARE_WEIXIN_GROUP];
+            }
         }
         
         Class clazz = NSClassFromString(@"SLComposeViewController");
         
-        if([clazz isAvailableForServiceType:SLServiceTypeSinaWeibo]){
+        if((_sourceType & iSocialControllerSourceTypeWeibo) && [clazz isAvailableForServiceType:SLServiceTypeSinaWeibo]){
             [_actionSheet addButtonWithTitle:ACTION_SHARE_WEIBO];
         }
         
-        if([clazz isAvailableForServiceType:SLServiceTypeFacebook]){
+        if((_sourceType & iSocialControllerSourceTypeFacebook) && [clazz isAvailableForServiceType:SLServiceTypeFacebook]){
             [_actionSheet addButtonWithTitle:ACTION_SHARE_Facebook];
         }
         
-        if([clazz isAvailableForServiceType:SLServiceTypeTwitter]){
+        if((_sourceType & iSocialControllerSourceTypeTwitter) && [clazz isAvailableForServiceType:SLServiceTypeTwitter]){
             [_actionSheet addButtonWithTitle:ACTION_SHARE_Twitter];
         }
         
-        if([MFMailComposeViewController canSendMail]){
+        if((_sourceType & iSocialControllerSourceTypeEmail) && [MFMailComposeViewController canSendMail]){
             [_actionSheet addButtonWithTitle:ACTION_SHARE_EMAIL];
         }
         
         if(_image == nil){
-            if([MFMessageComposeViewController canSendText]){
+            if((_sourceType & iSocialControllerSourceTypeSMS) && [MFMessageComposeViewController canSendText]){
                 [_actionSheet addButtonWithTitle:ACTION_SHARE_SMS];
             }
         }

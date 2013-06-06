@@ -27,6 +27,20 @@
 #define iSocialShareFinish      @"iSocialShareFinish"
 #define iSocialSendFinish       @"iSocialSendFinish"
 
+typedef enum {
+    iSocialControllerSourceTypeNone = 0
+    ,iSocialControllerSourceTypeSaveImage = 1 <<0
+    ,iSocialControllerSourceTypeWeibo = 1 <<1
+    ,iSocialControllerSourceTypeWeixin = 1 <<2
+    ,iSocialControllerSourceTypeWeixinGroup = 1 <<3
+    ,iSocialControllerSourceTypeEmail = 1 <<4
+    ,iSocialControllerSourceTypeSMS = 1 <<5
+    ,iSocialControllerSourceTypeFacebook = 1 <<6
+    ,iSocialControllerSourceTypeTwitter = 1 <<7
+    ,iSocialControllerSourceTypeChina = iSocialControllerSourceTypeSaveImage | iSocialControllerSourceTypeWeibo | iSocialControllerSourceTypeWeixin | iSocialControllerSourceTypeWeixinGroup | iSocialControllerSourceTypeEmail | iSocialControllerSourceTypeSMS
+    ,iSocialControllerSourceTypeAll = 0xffffffff
+} iSocialControllerSourceType;
+
 @interface iSocialController : NSObject<UIActionSheetDelegate,MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate>
 
 @property(nonatomic,retain) UIImage * image;
@@ -34,5 +48,6 @@
 @property(nonatomic,retain) NSString * title;
 @property(nonatomic,assign) IBOutlet UIViewController * viewController;
 @property(nonatomic,readonly) UIActionSheet * actionSheet;
+@property(nonatomic,assign) iSocialControllerSourceType sourceType;
 
 @end
