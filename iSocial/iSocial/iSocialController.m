@@ -24,6 +24,10 @@
 #define ACTION_SHARE_SMS    LocalizedString(iSocialShareSMS, @"发短信")
 #define ACTION_CANCEL       LocalizedString(iSocialCancel, @"取消")
 
+#define kSLServiceTypeSinaWeibo @"com.apple.social.sinaweibo"
+#define kSLServiceTypeFacebook @"com.apple.social.facebook"
+#define kSLServiceTypeTwitter @"com.apple.social.twitter"
+
 @implementation iSocialController
 
 @synthesize image = _image;
@@ -97,15 +101,15 @@
         
         Class clazz = NSClassFromString(@"SLComposeViewController");
         
-        if((_sourceType & iSocialControllerSourceTypeWeibo) && [clazz isAvailableForServiceType:SLServiceTypeSinaWeibo]){
+        if((_sourceType & iSocialControllerSourceTypeWeibo) && [clazz isAvailableForServiceType:kSLServiceTypeSinaWeibo]){
             [_actionSheet addButtonWithTitle:ACTION_SHARE_WEIBO];
         }
         
-        if((_sourceType & iSocialControllerSourceTypeFacebook) && [clazz isAvailableForServiceType:SLServiceTypeFacebook]){
+        if((_sourceType & iSocialControllerSourceTypeFacebook) && [clazz isAvailableForServiceType:kSLServiceTypeFacebook]){
             [_actionSheet addButtonWithTitle:ACTION_SHARE_Facebook];
         }
         
-        if((_sourceType & iSocialControllerSourceTypeTwitter) && [clazz isAvailableForServiceType:SLServiceTypeTwitter]){
+        if((_sourceType & iSocialControllerSourceTypeTwitter) && [clazz isAvailableForServiceType:kSLServiceTypeTwitter]){
             [_actionSheet addButtonWithTitle:ACTION_SHARE_Twitter];
         }
         
@@ -145,7 +149,7 @@
         
         Class clazz = NSClassFromString(@"SLComposeViewController");
         
-        SLComposeViewController * viewController = [clazz composeViewControllerForServiceType:SLServiceTypeSinaWeibo];
+        SLComposeViewController * viewController = [clazz composeViewControllerForServiceType:kSLServiceTypeSinaWeibo];
         
         [viewController setCompletionHandler:^(SLComposeViewControllerResult result){
             if(result == SLComposeViewControllerResultDone){
@@ -170,7 +174,7 @@
         
         Class clazz = NSClassFromString(@"SLComposeViewController");
         
-        SLComposeViewController * viewController = [clazz composeViewControllerForServiceType:SLServiceTypeFacebook];
+        SLComposeViewController * viewController = [clazz composeViewControllerForServiceType:kSLServiceTypeFacebook];
         
         [viewController setCompletionHandler:^(SLComposeViewControllerResult result){
             if(result == SLComposeViewControllerResultDone){
@@ -195,7 +199,7 @@
         
         Class clazz = NSClassFromString(@"SLComposeViewController");
         
-        SLComposeViewController * viewController = [clazz composeViewControllerForServiceType:SLServiceTypeTwitter];
+        SLComposeViewController * viewController = [clazz composeViewControllerForServiceType:kSLServiceTypeTwitter];
         
         [viewController setCompletionHandler:^(SLComposeViewControllerResult result){
             if(result == SLComposeViewControllerResultDone){
