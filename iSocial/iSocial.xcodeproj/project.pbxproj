@@ -14,6 +14,23 @@
 		11D6F6FB175ED39B006C091C /* iSocialController.h in Headers */ = {isa = PBXBuildFile; fileRef = 118AFBB1175D932100A6A2FF /* iSocialController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AC2C9D9317FA839F008A2737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 114772F41727DE5200196FB2;
+			remoteInfo = vTeam;
+		};
+		AC2C9D9517FA83B0008A2737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 114772F31727DE5200196FB2;
+			remoteInfo = vTeam;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		118AFB7C175D910500A6A2FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		118AFB8E175D913200A6A2FF /* iSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +121,14 @@
 			path = WeChatSDK;
 			sourceTree = "<group>";
 		};
+		AC2C9D9017FA839F008A2737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC2C9D9417FA839F008A2737 /* vTeam.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -131,6 +156,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AC2C9D9617FA83B0008A2737 /* PBXTargetDependency */,
 			);
 			name = iSocial;
 			productName = iSocial;
@@ -156,12 +182,28 @@
 			mainGroup = 118AFB70175D910500A6A2FF;
 			productRefGroup = 118AFB7A175D910500A6A2FF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AC2C9D9017FA839F008A2737 /* Products */;
+					ProjectRef = 118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				118AFB8D175D913200A6A2FF /* iSocial */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AC2C9D9417FA839F008A2737 /* vTeam.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = vTeam.framework;
+			remoteRef = AC2C9D9317FA839F008A2737 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		118AFB8C175D913200A6A2FF /* Resources */ = {
@@ -185,6 +227,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC2C9D9617FA83B0008A2737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = vTeam;
+			targetProxy = AC2C9D9517FA83B0008A2737 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		118AFB94175D913300A6A2FF /* InfoPlist.strings */ = {
