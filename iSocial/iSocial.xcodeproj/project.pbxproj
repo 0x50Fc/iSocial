@@ -12,6 +12,8 @@
 		118AFBB3175D932200A6A2FF /* iSocialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFBB2175D932100A6A2FF /* iSocialController.m */; };
 		11D6F6FA175ED396006C091C /* iSocial.h in Headers */ = {isa = PBXBuildFile; fileRef = 118AFB9B175D924F00A6A2FF /* iSocial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11D6F6FB175ED39B006C091C /* iSocialController.h in Headers */ = {isa = PBXBuildFile; fileRef = 118AFBB1175D932100A6A2FF /* iSocialController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC7540FE180A26E3004621E9 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC7540FB180A26E3004621E9 /* WeiboSDK.bundle */; };
+		AC7540FF180A26E3004621E9 /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7540FC180A26E3004621E9 /* WeiboSDK.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		118AFBB1175D932100A6A2FF /* iSocialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSocialController.h; sourceTree = "<group>"; };
 		118AFBB2175D932100A6A2FF /* iSocialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSocialController.m; sourceTree = "<group>"; };
 		118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = vTeam.xcodeproj; path = ../../vTeam/vTeam/vTeam.xcodeproj; sourceTree = "<group>"; };
+		AC7540FA180A26E3004621E9 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		AC7540FB180A26E3004621E9 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		AC7540FC180A26E3004621E9 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				118AFBDE175D988B00A6A2FF /* vTeam.xcodeproj */,
+				AC7540F9180A26E3004621E9 /* libWeiboSDK */,
 				118AFBA9175D92B500A6A2FF /* WeChatSDK */,
 				118AFB91175D913200A6A2FF /* iSocial */,
 				118AFB7B175D910500A6A2FF /* Frameworks */,
@@ -129,6 +135,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AC7540F9180A26E3004621E9 /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AC7540FA180A26E3004621E9 /* libWeiboSDK.a */,
+				AC7540FB180A26E3004621E9 /* WeiboSDK.bundle */,
+				AC7540FC180A26E3004621E9 /* WeiboSDK.h */,
+			);
+			path = libWeiboSDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -137,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D6F6FA175ED396006C091C /* iSocial.h in Headers */,
+				AC7540FF180A26E3004621E9 /* WeiboSDK.h in Headers */,
 				11D6F6FB175ED39B006C091C /* iSocialController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				118AFB96175D913300A6A2FF /* InfoPlist.strings in Resources */,
+				AC7540FE180A26E3004621E9 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,10 +329,6 @@
 				INFOPLIST_FILE = "iSocial/iSocial-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/WeChatSDK\"",
-				);
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				MACOSX_DEPLOYMENT_TARGET = "";
@@ -339,10 +353,6 @@
 				INFOPLIST_FILE = "iSocial/iSocial-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/WeChatSDK\"",
-				);
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				MACOSX_DEPLOYMENT_TARGET = "";
